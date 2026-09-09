@@ -1,0 +1,26 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+
+=== ESP32 on-device HAR (SITTING / WALKING / FALLING) ===
+variant=small window=128 @ 50 Hz stride=64
+MPU6050 ready: +-16 g, +-2000 deg/s, DLPF 21 Hz
+[int8] arena_used=3484 B of 4096 B allocated
+live model=int8 input scale=0.40271258 zero_point=-16
+--- LIVE: sampling and inference share core 1 ---
+READYPRED WALKING  p=0.996 [0.00 1.00 0.00] smoothed=WALKING  t=94339 us w=0 late=46 worst=7 us skipped=0
+PRED WALKING  p=0.996 [0.00 1.00 0.00] smoothed=WALKING  t=94318 us w=1 late=89 worst=88786 us skipped=4
+PRED WALKING  p=0.996 [0.00 1.00 0.00] smoothed=WALKING  t=94326 us w=2 late=102 worst=89012 us skipped=8
+PRED WALKING  p=0.996 [0.00 1.00 0.00] smoothed=WALKING  t=94336 us w=3 late=104 worst=89012 us skipped=12
+PRED WALKING  p=0.996 [0.00 1.00 0.00] smoothed=WALKING  t=94333 us w=4 late=142 worst=89031 us skipped=16
+PRED WALKING  p=0.996 [0.00 1.00 0.00] smoothed=WALKING  t=94178 us w=5 late=175 worst=89093 us skipped=20
+PRED WALKING  p=0.996 [0.00 1.00 0.00] smoothed=WALKING  t=94320 us w=6 late=214 worst=89094 us skipped=24
+PRED WALKING

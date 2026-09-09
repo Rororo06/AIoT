@@ -1,0 +1,30 @@
+[
+  {
+    "config": "deploy_int8",
+    "flags": "-DRUN_BENCHMARK=0 -DRUN_SELFTEST=1 -DPRIMARY_FLOAT32=0",
+    "flash_bytes": 382756,
+    "ram_bytes": 40460,
+    "bin_bytes": 382912
+  },
+  {
+    "config": "deploy_float32",
+    "flags": "-DRUN_BENCHMARK=0 -DRUN_SELFTEST=1 -DPRIMARY_FLOAT32=1",
+    "flash_bytes": 383880,
+    "ram_bytes": 45580,
+    "bin_bytes": 384032
+  },
+  {
+    "config": "benchmark",
+    "flags": "-DRUN_BENCHMARK=1 -DRUN_SELFTEST=1 -DPRIMARY_FLOAT32=0",
+    "flash_bytes": 390244,
+    "ram_bytes": 52844,
+    "bin_bytes": 390400
+  },
+  {
+    "config": "singlecore",
+    "flags": "-DRUN_BENCHMARK=0 -DRUN_SELFTEST=0 -DUSE_SAMPLING_TASK=0",
+    "flash_bytes": 367700,
+    "ram_bytes": 34316,
+    "bin_bytes": 367856
+  }
+]

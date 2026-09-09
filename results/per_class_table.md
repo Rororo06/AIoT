@@ -1,0 +1,20 @@
+| model | class | precision | recall | F1 | support |
+|---|---|---:|---:|---:|---:|
+| small/float32 | SITTING | 0.771 | 0.978 | 0.862 | 588 |
+| small/float32 | WALKING | 0.989 | 0.910 | 0.948 | 1936 |
+| small/float32 | FALLING | 0.992 | 0.984 | 0.988 | 375 |
+| small/int8 | SITTING | 0.768 | 0.976 | 0.860 | 588 |
+| small/int8 | WALKING | 0.988 | 0.909 | 0.947 | 1936 |
+| small/int8 | FALLING | 0.992 | 0.981 | 0.987 | 375 |
+| medium/float32 | SITTING | 0.764 | 0.983 | 0.859 | 588 |
+| medium/float32 | WALKING | 0.990 | 0.904 | 0.945 | 1936 |
+| medium/float32 | FALLING | 0.984 | 0.981 | 0.983 | 375 |
+| medium/int8 | SITTING | 0.767 | 0.980 | 0.860 | 588 |
+| medium/int8 | WALKING | 0.990 | 0.907 | 0.947 | 1936 |
+| medium/int8 | FALLING | 0.987 | 0.984 | 0.985 | 375 |
+| large/float32 | SITTING | 0.756 | 0.986 | 0.856 | 588 |
+| large/float32 | WALKING | 0.993 | 0.903 | 0.946 | 1936 |
+| large/float32 | FALLING | 1.000 | 0.987 | 0.993 | 375 |
+| large/int8 | SITTING | 0.759 | 0.986 | 0.858 | 588 |
+| large/int8 | WALKING | 0.993 | 0.905 | 0.947 | 1936 |
+| large/int8 | FALLING | 1.000 | 0.987 | 0.993 | 375 |

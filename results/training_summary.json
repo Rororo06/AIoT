@@ -1,0 +1,26 @@
+[
+  {
+    "variant": "small",
+    "params": 811,
+    "epochs_run": 53,
+    "val_loss": 0.16857358813285828,
+    "val_accuracy": 0.9448075294494629,
+    "checkpoint": "models/har_small.keras"
+  },
+  {
+    "variant": "medium",
+    "params": 2643,
+    "epochs_run": 35,
+    "val_loss": 0.19019192457199097,
+    "val_accuracy": 0.9448075294494629,
+    "checkpoint": "models/har_medium.keras"
+  },
+  {
+    "variant": "large",
+    "params": 9379,
+    "epochs_run": 28,
+    "val_loss": 0.19207581877708435,
+    "val_accuracy": 0.9448075294494629,
+    "checkpoint": "models/har_large.keras"
+  }
+]

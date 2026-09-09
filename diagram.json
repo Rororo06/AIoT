@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "author": "AIoT course project",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-mpu6050",
+      "id": "imu1",
+      "top": -80,
+      "left": 250,
+      "attrs": {
+        "accelX": "0",
+        "accelY": "-0.98",
+        "accelZ": "0.1",
+        "rotationX": "0",
+        "rotationY": "0",
+        "rotationZ": "0",
+        "temperature": "24"
+      }
+    },
+    { "type": "wokwi-led", "id": "led_sit", "top": 130, "left": 250, "attrs": { "color": "blue", "label": "SIT" } },
+    { "type": "wokwi-led", "id": "led_walk", "top": 130, "left": 320, "attrs": { "color": "green", "label": "WALK" } },
+    { "type": "wokwi-led", "id": "led_fall", "top": 130, "left": 390, "attrs": { "color": "red", "label": "FALL" } },
+    { "type": "wokwi-resistor", "id": "r_sit", "top": 220, "left": 250, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r_walk", "top": 220, "left": 320, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r_fall", "top": 220, "left": 390, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+
+    [ "imu1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "imu1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "imu1:SDA", "esp:21", "green", [ "v0" ] ],
+    [ "imu1:SCL", "esp:22", "blue", [ "v0" ] ],
+
+    [ "esp:25", "led_sit:A", "blue", [ "v0" ] ],
+    [ "led_sit:C", "r_sit:1", "black", [ "v0" ] ],
+    [ "r_sit:2", "esp:GND.2", "black", [ "v0" ] ],
+
+    [ "esp:26", "led_walk:A", "green", [ "v0" ] ],
+    [ "led_walk:C", "r_walk:1", "black", [ "v0" ] ],
+    [ "r_walk:2", "esp:GND.2", "black", [ "v0" ] ],
+
+    [ "esp:27", "led_fall:A", "red", [ "v0" ] ],
+    [ "led_fall:C", "r_fall:1", "black", [ "v0" ] ],
+    [ "r_fall:2", "esp:GND.2", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

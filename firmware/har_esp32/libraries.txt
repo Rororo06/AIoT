@@ -1,0 +1,5 @@
+# Libraries required by har_esp32.ino.
+# Wokwi's web IDE reads this file; arduino-cli users can run:
+#   arduino-cli lib install "Adafruit MPU6050" "Chirale_TensorFLowLite"
+Adafruit MPU6050
+Chirale_TensorFLowLite

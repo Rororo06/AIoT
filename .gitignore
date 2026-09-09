@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Raw dataset (redistribution is out of scope; see data/README.md)
+data/raw/
+data/processed/*.npz
+
+# Build artifacts
+firmware/build/
+firmware/**/build/
+*.elf
+*.map
+
+# OS
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,314 @@
+[
+  {
+    "variant": "small",
+    "precision": "float32",
+    "params": 811,
+    "tflite_bytes": 6632,
+    "host_latency_ms_mean": 0.008257602541961687,
+    "host_latency_ms_p95": 0.009400071576237679,
+    "input_dtype": "float32",
+    "output_dtype": "float32",
+    "input_scale": 0.0,
+    "input_zero_point": 0,
+    "accuracy": 0.9334253190755433,
+    "macro_f1": 0.9326990594832271,
+    "confusion_matrix": [
+      [
+        575,
+        13,
+        0
+      ],
+      [
+        171,
+        1762,
+        3
+      ],
+      [
+        0,
+        6,
+        369
+      ]
+    ],
+    "per_class": {
+      "SITTING": {
+        "precision": 0.7707774798927614,
+        "recall": 0.9778911564625851,
+        "f1": 0.8620689655172413,
+        "support": 588
+      },
+      "WALKING": {
+        "precision": 0.9893318360471645,
+        "recall": 0.9101239669421488,
+        "f1": 0.9480764057035244,
+        "support": 1936
+      },
+      "FALLING": {
+        "precision": 0.9919354838709677,
+        "recall": 0.984,
+        "f1": 0.9879518072289156,
+        "support": 375
+      }
+    },
+    "artifact": "models/har_small_float32.tflite"
+  },
+  {
+    "variant": "small",
+    "precision": "int8",
+    "params": 811,
+    "tflite_bytes": 5520,
+    "host_latency_ms_mean": 0.007185485571527592,
+    "host_latency_ms_p95": 0.008299946784973145,
+    "input_dtype": "int8",
+    "output_dtype": "int8",
+    "input_scale": 0.4027125835418701,
+    "input_zero_point": -16,
+    "accuracy": 0.9320455329423939,
+    "macro_f1": 0.9311735123099535,
+    "confusion_matrix": [
+      [
+        574,
+        14,
+        0
+      ],
+      [
+        173,
+        1760,
+        3
+      ],
+      [
+        0,
+        7,
+        368
+      ]
+    ],
+    "per_class": {
+      "SITTING": {
+        "precision": 0.7684069611780455,
+        "recall": 0.9761904761904762,
+        "f1": 0.8599250936329588,
+        "support": 588
+      },
+      "WALKING": {
+        "precision": 0.9882088714205502,
+        "recall": 0.9090909090909091,
+        "f1": 0.9470002690341673,
+        "support": 1936
+      },
+      "FALLING": {
+        "precision": 0.9919137466307277,
+        "recall": 0.9813333333333333,
+        "f1": 0.9865951742627346,
+        "support": 375
+      }
+    },
+    "artifact": "models/har_small_int8.tflite"
+  },
+  {
+    "variant": "medium",
+    "precision": "float32",
+    "params": 2643,
+    "tflite_bytes": 13984,
+    "host_latency_ms_mean": 0.014764374518173579,
+    "host_latency_ms_p95": 0.015900004655122757,
+    "input_dtype": "float32",
+    "output_dtype": "float32",
+    "input_scale": 0.0,
+    "input_zero_point": 0,
+    "accuracy": 0.9303208002759572,
+    "macro_f1": 0.9291958138179724,
+    "confusion_matrix": [
+      [
+        578,
+        10,
+        0
+      ],
+      [
+        179,
+        1751,
+        6
+      ],
+      [
+        0,
+        7,
+        368
+      ]
+    ],
+    "per_class": {
+      "SITTING": {
+        "precision": 0.7635402906208718,
+        "recall": 0.9829931972789115,
+        "f1": 0.8594795539033457,
+        "support": 588
+      },
+      "WALKING": {
+        "precision": 0.9903846153846154,
+        "recall": 0.9044421487603306,
+        "f1": 0.9454643628509719,
+        "support": 1936
+      },
+      "FALLING": {
+        "precision": 0.983957219251337,
+        "recall": 0.9813333333333333,
+        "f1": 0.9826435246995995,
+        "support": 375
+      }
+    },
+    "artifact": "models/har_medium_float32.tflite"
+  },
+  {
+    "variant": "medium",
+    "precision": "int8",
+    "params": 2643,
+    "tflite_bytes": 8240,
+    "host_latency_ms_mean": 0.009650276221126401,
+    "host_latency_ms_p95": 0.011400086805224419,
+    "input_dtype": "int8",
+    "output_dtype": "int8",
+    "input_scale": 0.4027125835418701,
+    "input_zero_point": -16,
+    "accuracy": 0.9317005864091066,
+    "macro_f1": 0.9307626731289619,
+    "confusion_matrix": [
+      [
+        576,
+        12,
+        0
+      ],
+      [
+        175,
+        1756,
+        5
+      ],
+      [
+        0,
+        6,
+        369
+      ]
+    ],
+    "per_class": {
+      "SITTING": {
+        "precision": 0.7669773635153129,
+        "recall": 0.9795918367346939,
+        "f1": 0.8603435399551904,
+        "support": 588
+      },
+      "WALKING": {
+        "precision": 0.9898534385569335,
+        "recall": 0.9070247933884298,
+        "f1": 0.9466307277628032,
+        "support": 1936
+      },
+      "FALLING": {
+        "precision": 0.9866310160427807,
+        "recall": 0.984,
+        "f1": 0.9853137516688919,
+        "support": 375
+      }
+    },
+    "artifact": "models/har_medium_int8.tflite"
+  },
+  {
+    "variant": "large",
+    "precision": "float32",
+    "params": 9379,
+    "tflite_bytes": 40904,
+    "host_latency_ms_mean": 0.011590185825234767,
+    "host_latency_ms_p95": 0.018000020645558834,
+    "input_dtype": "float32",
+    "output_dtype": "float32",
+    "input_scale": 0.0,
+    "input_zero_point": 0,
+    "accuracy": 0.931010693342532,
+    "macro_f1": 0.9317646210752364,
+    "confusion_matrix": [
+      [
+        580,
+        8,
+        0
+      ],
+      [
+        187,
+        1749,
+        0
+      ],
+      [
+        0,
+        5,
+        370
+      ]
+    ],
+    "per_class": {
+      "SITTING": {
+        "precision": 0.7561929595827901,
+        "recall": 0.9863945578231292,
+        "f1": 0.8560885608856088,
+        "support": 588
+      },
+      "WALKING": {
+        "precision": 0.9926220204313281,
+        "recall": 0.9034090909090909,
+        "f1": 0.9459167117360735,
+        "support": 1936
+      },
+      "FALLING": {
+        "precision": 1.0,
+        "recall": 0.9866666666666667,
+        "f1": 0.9932885906040269,
+        "support": 375
+      }
+    },
+    "artifact": "models/har_large_float32.tflite"
+  },
+  {
+    "variant": "large",
+    "precision": "int8",
+    "params": 9379,
+    "tflite_bytes": 16680,
+    "host_latency_ms_mean": 0.005684795690624464,
+    "host_latency_ms_p95": 0.00970007386058569,
+    "input_dtype": "int8",
+    "output_dtype": "int8",
+    "input_scale": 0.4027125835418701,
+    "input_zero_point": -16,
+    "accuracy": 0.9320455329423939,
+    "macro_f1": 0.9326826330729475,
+    "confusion_matrix": [
+      [
+        580,
+        8,
+        0
+      ],
+      [
+        184,
+        1752,
+        0
+      ],
+      [
+        0,
+        5,
+        370
+      ]
+    ],
+    "per_class": {
+      "SITTING": {
+        "precision": 0.7591623036649214,
+        "recall": 0.9863945578231292,
+        "f1": 0.8579881656804734,
+        "support": 588
+      },
+      "WALKING": {
+        "precision": 0.9926345609065156,
+        "recall": 0.9049586776859504,
+        "f1": 0.9467711429343421,
+        "support": 1936
+      },
+      "FALLING": {
+        "precision": 1.0,
+        "recall": 0.9866666666666667,
+        "f1": 0.9932885906040269,
+        "support": 375
+      }
+    },
+    "artifact": "models/har_large_int8.tflite"
+  }
+]

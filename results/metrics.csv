@@ -1,0 +1,7 @@
+variant,precision,params,tflite_bytes,tflite_kib,accuracy,macro_f1,host_latency_ms,recall_sitting,recall_walking,recall_falling,device_latency_ms,device_arena_bytes,duty_percent,realtime_feasible
+small,float32,811,6632,6.48,0.9334,0.9327,0.008,0.9779,0.9101,0.984,413.278,8504,32.29,True
+small,int8,811,5520,5.39,0.932,0.9312,0.007,0.9762,0.9091,0.9813,94.385,3484,7.37,True
+medium,float32,2643,13984,13.66,0.9303,0.9292,0.015,0.983,0.9044,0.9813,1139.416,13624,89.02,True
+medium,int8,2643,8240,8.05,0.9317,0.9308,0.01,0.9796,0.907,0.984,221.536,5020,17.31,True
+large,float32,9379,40904,39.95,0.931,0.9318,0.012,0.9864,0.9034,0.9867,3534.382,25912,276.12,False
+large,int8,9379,16680,16.29,0.932,0.9327,0.006,0.9864,0.905,0.9867,618.231,8668,48.3,True

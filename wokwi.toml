@@ -1,0 +1,6 @@
+[wokwi]
+version = 1
+# Produced by: python tools/measure_firmware.py
+# (or: arduino-cli compile --fqbn esp32:esp32:esp32 --output-dir firmware/build/benchmark firmware/har_esp32)
+firmware = 'firmware/build/benchmark/har_esp32.ino.bin'
+elf = 'firmware/build/benchmark/har_esp32.ino.elf'

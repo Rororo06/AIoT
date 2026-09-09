@@ -1,0 +1,25 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+
+=== ESP32 on-device HAR (SITTING / WALKING / FALLING) ===
+variant=small window=128 @ 50 Hz stride=64
+MPU6050 ready: +-16 g, +-2000 deg/s, DLPF 21 Hz
+--- MODEL ZOO: every candidate measured on this device ---
+ZOO variant precision bytes arena mean_us p95_us correct
+ZOO small float32 6632 8504 413277.9 413340 9/9
+ZOO small int8 5520 3484 94385.0 94420 9/9
+ZOO medium float32 13984 13624 1139416.2 1139487 9/9
+ZOO medium int8 8240 5020 221535.8 221615 9/9
+ZOO large float32 40904 25912 3534382.0 3534495 9/9
+ZOO large int8 16680 8668 618230.8 618277 9/9
+ZOO DONE
+READY
